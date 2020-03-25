@@ -293,6 +293,7 @@ a{
     border-radius: 4px;
     color: white;
     margin: 0.5rem;
+    text-align: center;
 }
 .btn-sim{
     background: #4c8a40;
