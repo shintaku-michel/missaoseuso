@@ -26,13 +26,75 @@
         <div class="row">
             <div class="col-md-12">
               <div class="card-sessoes card-sessoes__ongoing">
-                <p class="card-sessoes__hora">09h45</p>
+                <p class="card-sessoes__hora"><img src="../images/clock-regular.svg" alt="Ícone hora" class="card-sessoes__icon card-sessoes__icon--mini" aria-hidden="true">  09h45</p>
                 <h2 class="card-sessoes__title">PLEN - Plenário virtual</h2>
                 <p class="card-sessoes__text">Teste de painel eletrônico</p>
                 <p class="card-sessoes__text">Plenário da Câmara dos Deputados</p>
-                <p class="card-sessoes__text card-sessoes__text--ongoing">Em andamento</p>
+                <span class="badge badge-primary badge--ongoing">Em andamento</span>
                 <div class="card-botoes">
-                  
+                  <button class="card-botao">
+                    <img src="../images/laptop-house-solid.svg" alt="" class="card-botao__icon" aria-hidden="true">
+                    <p class="card-botao__text">Sessão virtual</p>
+                  </button>
+                  <button class="card-botao">
+                    <img src="../images/vote-yea-solid.svg" alt="" class="card-botao__icon" aria-hidden="true">
+                    <p class="card-botao__text">Votação</p>
+                  </button>
+                  <button class="card-botao" onclick="javascript:window.location.href='registrar-presenca.html'">
+                    <img src="../images/user-check-solid.svg" alt="" class="card-botao__icon" aria-hidden="true">
+                    <p class="card-botao__text">Registrar presença</p>
+                  </button>
+                </div>
+              </div>
+              <div class="card-sessoes card-sessoes__invoked">
+                <p class="card-sessoes__hora"><img src="../images/clock-regular.svg" alt="Ícone hora" class="card-sessoes__icon card-sessoes__icon--mini" aria-hidden="true">  14h00</p>
+                <h2 class="card-sessoes__title">PLEN - Plenário virtual</h2>
+                <p class="card-sessoes__text">Teste de painel eletrônico</p>
+                <p class="card-sessoes__text">Plenário da Câmara dos Deputados</p>
+                <span class="badge badge-primary badge--invoked">Convocada</span>
+                <div class="card-botoes">
+                  <button class="card-botao">
+                    <img src="../images/play-circle-regular.svg" alt="" class="card-botao__icon" aria-hidden="true">
+                    <p class="card-botao__text">Gravação</p>
+                  </button>
+                  <button class="card-botao">
+                    <img src="../images/vote-yea-solid.svg" alt="" class="card-botao__icon" aria-hidden="true">
+                    <p class="card-botao__text">Votação</p>
+                  </button>
+                </div>
+              </div>
+              <div class="card-sessoes card-sessoes__finished">
+                <p class="card-sessoes__hora"><img src="../images/clock-regular.svg" alt="Ícone hora" class="card-sessoes__icon card-sessoes__icon--mini" aria-hidden="true">  14h00</p>
+                <h2 class="card-sessoes__title">PLEN - Plenário virtual</h2>
+                <p class="card-sessoes__text">Teste de painel eletrônico</p>
+                <p class="card-sessoes__text">Plenário da Câmara dos Deputados</p>
+                <span class="badge badge-primary badge--finished">Finalizada</span>
+                <div class="card-botoes">
+                  <button class="card-botao">
+                    <img src="../images/play-circle-regular.svg" alt="" class="card-botao__icon" aria-hidden="true">
+                    <p class="card-botao__text">Gravação</p>
+                  </button>
+                  <button class="card-botao">
+                    <img src="../images/vote-yea-solid.svg" alt="" class="card-botao__icon" aria-hidden="true">
+                    <p class="card-botao__text">Votação</p>
+                  </button>
+                </div>
+              </div>
+              <div class="card-sessoes card-sessoes__cancelled">
+                <p class="card-sessoes__hora"><img src="../images/clock-regular.svg" alt="Ícone hora" class="card-sessoes__icon card-sessoes__icon--mini" aria-hidden="true">  14h00</p>
+                <h2 class="card-sessoes__title">PLEN - Plenário virtual</h2>
+                <p class="card-sessoes__text">Teste de painel eletrônico</p>
+                <p class="card-sessoes__text">Plenário da Câmara dos Deputados</p>
+                <span class="badge badge-primary badge--cancelled">Cancelada</span>
+                <div class="card-botoes">
+                  <button class="card-botao">
+                    <img src="../images/play-circle-regular.svg" alt="" class="card-botao__icon" aria-hidden="true">
+                    <p class="card-botao__text">Gravação</p>
+                  </button>
+                  <button class="card-botao">
+                    <img src="../images/vote-yea-solid.svg" alt="" class="card-botao__icon" aria-hidden="true">
+                    <p class="card-botao__text">Votação</p>
+                  </button>
                 </div>
               </div>
             </div>
