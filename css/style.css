@@ -4,8 +4,10 @@
     --secondary-color: #00887a;
 }
 
+/*Header*/
 .header,
-.subheader {
+.subheader,
+.footer {
     color: #FFF;
     display: flex;
     flex-flow: row nowrap;
@@ -30,24 +32,43 @@
 .subheader {
     padding: 10px 15px;
     background-color: var(--secondary-color);
-    justify-content: center;
+    justify-content: flex-end;
 }
 
     .subheader a {
         color: #FFF;
     }
 
-    .subheader .subheader__link-data {
+    .subheader__icon {
+        height: 20px;
+    }
+
+/*Footer*/
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: var(--secondary-color);
+    justify-content: center;
+}
+
+    .footer a {
+        color: #FFF;
+    }
+
+    .footer .footer__link-data {
         padding: 0 15px;
         margin: 0 50px;
     }
 
-    .subheader__button {
+    .footer__button {
         border: none;
         background-color: transparent;
     }
 
-    .subheader__icon {
+    .footer__icon {
         display: block;
         height: 20px;
     }
