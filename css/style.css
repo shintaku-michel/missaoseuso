@@ -1,0 +1,34 @@
+/* Customizações Gerais */
+a{
+    color:#0088ce;
+}
+
+/* Página de login */
+.page-login {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    margin-top: 5rem;
+}
+.page-subtitle {
+    display: block;
+    text-align: center;
+}
+.page-title{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    padding: 0 0.5rem 1.5rem 0.5rem;
+    border-bottom: 2px solid #598b4f;
+}
+.btn-infoleg{
+    color: #fff;
+    background-color: #598b4f;
+    border-color: #385D30;
+}
+
+
+
+    
