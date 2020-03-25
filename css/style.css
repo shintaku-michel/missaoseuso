@@ -19,8 +19,8 @@
 
 /* Customizações Gerais */
 :root {
-    --primary-color: #02786c;
-    --secondary-color: #00887a;
+    --primary-color: #015950;
+    --secondary-color: #00645a;
 }
 .page__margin-top {
     margin: 0;
@@ -33,15 +33,19 @@
     box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.5);
 }
 
+* {
+    color: #404040;
+}
+
 body {
     background-color: #eee;
+    padding-bottom: 50px;
 }
 
 /*Header*/
 .header,
 .subheader,
 .footer {
-    color: #FFF;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -56,6 +60,7 @@ body {
 
     .header__title {
         font-size: 1.5rem;
+        color: #FFF;
     }
 
     .header__link-sair {
@@ -84,7 +89,7 @@ body {
 
 /*Footer*/
 .footer {
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -189,6 +194,26 @@ a{
         border-left: 5px solid #018102;
     }
 
+    .card-sessoes__invoked {
+        border-left: 5px solid #20518f;
+    }
+
+    .card-sessoes__finished {
+        border-left: 5px solid #575757;
+    }
+
+    .card-sessoes__cancelled {
+        border-left: 5px solid #d9534f;
+    }
+
+    .card-sessoes__hora {
+        font-size: 0.9rem;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        color: var(--primary-color);
+    }
+
     .card-sessoes__title {
         font-size: 1.15rem;
     }
@@ -197,6 +222,46 @@ a{
         margin: 0;
     }
 
-    .card-sessoes__text--ongoing {
-        color: #018102;
+    .badge--ongoing {
+        background-color: #018102;
+    }
+
+    .badge--invoked {
+        background-color: #20518f;
+    }
+
+    .badge--finished {
+        background-color: #575757;
+    }
+
+    .badge--cancelled {
+        background-color: #d9534f;
+    }
+
+        .card-sessoes__icon--mini {
+            height: 16px;
+            margin-right: 5px;
+        }
+
+.card-botoes {
+    padding-top: 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.card-botao {
+    width: 30%;
+    border: none;
+    background-color: transparent;
+}
+
+    .card-botao__icon {
+        height: 30px;
+        margin-bottom: 5px;
+    }
+
+    .card-botao__text {
+        margin: 0;
     }
