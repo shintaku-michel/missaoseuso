@@ -22,6 +22,9 @@
     --primary-color: #02786c;
     --secondary-color: #00887a;
 }
+.page__margin-top {
+    margin-top: 1rem;
+}
 
 body {
     background-color: #eee;
@@ -126,7 +129,34 @@ a{
     border-color: #385D30;
 }
 
-/*Lista de reuniões*/
+/* Registrar presença */
+.dep-name {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+}
+.dep-registration{
+    text-align: center;
+}
+.result-text__title{
+    font-weight: bold;
+    line-height: 1.3rem;
+    margin: 0;
+}
+.img-success{
+    background-image: url(../img/success.png);
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    margin: 0 1rem 1rem 0;
+}
+
 
 .card-sessoes {
     background-color: #FFF;
