@@ -9,12 +9,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Registrar Presença</title>
+    <title>Registrar Voto</title>
   </head>
   <body>
     <div class="header">
       <h1 class="header__title">
-        Registrar Presença
+        Votar
       </h1>
       <a href="../login.html" class="header__link-sair">Sair</a>
     </div>
@@ -36,16 +36,25 @@
           </div>
 
           <div class="col-sm-12 col-md-6 offset-md-3">
+
+            <div class="container__vote" role="alert">
+                <strong>MPV N 697/2019</strong> 
+                <span class="result-text">Requerimento de retirada de pauta</span>
+            </div>
+
             <h6 class="dep-name">Dep. Alceu Moreira</h6>
             <p class="dep-registration">Ponto/Matrícula: D_56486</p>
 
+            <div class="alert alert-warning text-center" role="alert">
+                Confirmar voto <strong>SIM</strong>
+              </div>
 
-            <div class="alert alert-success" role="alert">
-                <img src="../images/check-circle-solid.svg" alt="Imagem icone sucesso" class="success-ckeck__icon" aria-hidden="true">
-                <p class="result-text__title">Registro de presença realizado com sucesso!</p>
-                <p class="result-text">16/03/2020 11:21:42</p>
+            <div class="votar-botoes">
+                <button type="button" class="btn-sim btn-votar">CONFIRMAR</button>
+                <button type="button" class="btn-nao btn-votar">CANCELAR</button>
             </div>
           </div>
+
         </div>
     </div>
     <div class="footer">
