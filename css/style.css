@@ -23,6 +23,10 @@
     --secondary-color: #00887a;
 }
 
+body {
+    background-color: #eee;
+}
+
 /*Header*/
 .header,
 .subheader,
@@ -124,3 +128,28 @@ a{
 
 /*Lista de reuniões*/
 
+.card-sessoes {
+    background-color: #FFF;
+    width: 100%;
+    padding: 20px 15px;
+    margin-top: 20px;
+    -webkit-box-shadow: 3px 3px 7px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 3px 7px 0px rgba(0,0,0,0.5);
+    box-shadow: 3px 3px 7px 0px rgba(0,0,0,0.5);
+}
+
+    .card-sessoes__ongoing {
+        border-left: 5px solid #018102;
+    }
+
+    .card-sessoes__title {
+        font-size: 1.15rem;
+    }
+
+    .card-sessoes__text {
+        margin: 0;
+    }
+
+    .card-sessoes__text--ongoing {
+        color: #018102;
+    }
