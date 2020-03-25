@@ -1,4 +1,57 @@
 /* Customizações Gerais */
+:root {
+    --primary-color: #02786c;
+    --secondary-color: #00887a;
+}
+
+.header,
+.subheader {
+    color: #FFF;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.header {
+    padding: 20px 15px;
+    background-color: var(--primary-color);
+    justify-content: space-between;
+    border-bottom: 1px solid #209d74;
+}
+
+    .header__title {
+        font-size: 1.5rem;
+    }
+
+    .header__link-sair {
+        color: #FFF;
+    }
+
+.subheader {
+    padding: 10px 15px;
+    background-color: var(--secondary-color);
+    justify-content: center;
+}
+
+    .subheader a {
+        color: #FFF;
+    }
+
+    .subheader .subheader__link-data {
+        padding: 0 15px;
+        margin: 0 50px;
+    }
+
+    .subheader__button {
+        border: none;
+        background-color: transparent;
+    }
+
+    .subheader__icon {
+        display: block;
+        height: 20px;
+    }
+
 a{
     color:#0088ce;
 }
@@ -29,6 +82,5 @@ a{
     border-color: #385D30;
 }
 
+/*Lista de reuniões*/
 
-
-    
