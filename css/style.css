@@ -86,6 +86,11 @@ body {
     float: left;
     margin: 0 1rem 0 1rem;
 }
+.erro-ckeck__icon {
+    height: 45px;
+    float: left;
+    margin: 0 1rem 0 1rem;
+}
 
 /*Footer*/
 .footer {
