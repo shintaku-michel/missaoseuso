@@ -23,7 +23,14 @@
     --secondary-color: #00887a;
 }
 .page__margin-top {
-    margin-top: 1rem;
+    margin: 0;
+    padding: 0;
+}
+.card.card-session{
+    border-radius: 0;
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.5);
 }
 
 body {
@@ -68,6 +75,12 @@ body {
     .subheader__icon {
         height: 15px;
     }
+
+.success-ckeck__icon {
+    height: 45px;
+    float: left;
+    margin: 0 1rem 0 1rem;
+}
 
 /*Footer*/
 .footer {
@@ -131,7 +144,7 @@ a{
 
 /* Registrar presença */
 .dep-name {
-    margin-top: 2rem;
+    margin: 2rem 0 0 0;
     font-size: 1.2rem;
     text-align: center;
     font-weight: bold;
@@ -143,6 +156,10 @@ a{
     font-weight: bold;
     line-height: 1.3rem;
     margin: 0;
+}
+.result-text {
+    margin: 0;
+    color: #333333;
 }
 .img-success{
     background-image: url(../img/success.png);
