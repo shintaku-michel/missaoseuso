@@ -12,31 +12,51 @@
     <title>Registrar Presença</title>
   </head>
   <body>
-      <div class="container">
-          <div class="row">
-              <div class="col-sm-12 col-md-6 offset-md-3">
-                <p>Registrar Presença</p>
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Plenário</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Sessão deliberativa extraordinária</h6>
-                        <p class="card-text">17/03/2020 - 16h00</p>
-                    </div>
-                </div>
-
-                <h6 class="dep-name">Dep. Alceu Moreira</h6>
-                <p class="dep-registration">Ponto/Matrícula: D_56486</p>
-
-
-                <div class="alert alert-success" role="alert">
-                    <span class="img-success"></span>
-                    <p class="result-text__title">Registro de presença realizado com sucesso!</p>
-                    <p class="result-text">16/03/2020 11:21:42</p>
-                </div>
-         
+    <div class="header">
+      <h1 class="header__title">
+        Sessões - Plenário
+      </h1>
+      <a href="login.html" class="header__link-sair">Sair</a>
+    </div>
+    <div class="subheader">
+      <a href="#" class="subheader__link">
+        <img src="../images/sync-solid.svg" alt="" class="subheader__icon"> Atualizar 23s
+      </a>
+    </div>
+    <div class="container-sm">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 offset-md-3 page__margin-top">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Plenário</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Sessão deliberativa extraordinária</h6>
+                      <p class="card-text">17/03/2020 - 16h00</p>
+                  </div>
               </div>
-          </div>
-      </div>
+
+              <h6 class="dep-name">Dep. Alceu Moreira</h6>
+              <p class="dep-registration">Ponto/Matrícula: D_56486</p>
+
+
+              <div class="alert alert-success" role="alert">
+                  <span class="img-success"></span>
+                  <p class="result-text__title">Registro de presença realizado com sucesso!</p>
+                  <p class="result-text">16/03/2020 11:21:42</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+      <button class="footer__button footer__button--anterior">
+        <img src="../images/chevron-left-solid.svg" alt="Dia anterior" class="footer__icon" aria-hidden="true">
+        <span class="sr-only">Dia anterior</span>
+      </button>
+      <a href="#" class="footer__link-data">25/03/20</a>
+      <button class="footer__button footer__button--proximo">
+        <img src="../images/chevron-right-solid.svg" alt="Próximo dia" class="footer__icon" aria-hidden="true">
+        <span class="sr-only">Próximo dia</span>
+      </button>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

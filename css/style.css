@@ -22,6 +22,9 @@
     --primary-color: #02786c;
     --secondary-color: #00887a;
 }
+.page__margin-top {
+    margin-top: 1rem;
+}
 
 /*Header*/
 .header,
