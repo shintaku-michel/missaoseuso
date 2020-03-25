@@ -63,6 +63,11 @@ body {
         color: #FFF;
     }
 
+        .header__title--center {
+            width: 100%;
+            text-align: center;
+        }
+
     .header__link-sair {
         color: #FFF;
     }
@@ -102,6 +107,9 @@ body {
     background-color: var(--secondary-color);
     justify-content: center;
 }
+    .footer--back {
+        justify-content: flex-start;
+    }
 
     .footer a {
         color: #FFF;
@@ -118,7 +126,6 @@ body {
     }
 
     .footer__icon {
-        display: block;
         height: 20px;
     }
 
