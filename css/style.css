@@ -1,4 +1,78 @@
 /* Customizações Gerais */
+:root {
+    --primary-color: #02786c;
+    --secondary-color: #00887a;
+}
+
+/*Header*/
+.header,
+.subheader,
+.footer {
+    color: #FFF;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.header {
+    padding: 20px 15px;
+    background-color: var(--primary-color);
+    justify-content: space-between;
+    border-bottom: 1px solid #209d74;
+}
+
+    .header__title {
+        font-size: 1.5rem;
+    }
+
+    .header__link-sair {
+        color: #FFF;
+    }
+
+.subheader {
+    padding: 10px 15px;
+    background-color: var(--secondary-color);
+    justify-content: flex-end;
+}
+
+    .subheader a {
+        color: #FFF;
+    }
+
+    .subheader__icon {
+        height: 20px;
+    }
+
+/*Footer*/
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: var(--secondary-color);
+    justify-content: center;
+}
+
+    .footer a {
+        color: #FFF;
+    }
+
+    .footer .footer__link-data {
+        padding: 0 15px;
+        margin: 0 50px;
+    }
+
+    .footer__button {
+        border: none;
+        background-color: transparent;
+    }
+
+    .footer__icon {
+        display: block;
+        height: 20px;
+    }
+
 a{
     color:#0088ce;
 }
@@ -58,5 +132,3 @@ a{
 }
 
 
-
-    
