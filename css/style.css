@@ -28,9 +28,9 @@
 }
 .card.card-session{
     border-radius: 0;
-    -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.5);
-    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
 }
 
 * {
@@ -56,6 +56,22 @@ body {
     background-color: var(--primary-color);
     justify-content: space-between;
     border-bottom: 1px solid #209d74;
+    background: url(../images/bg_topo.png),-moz-linear-gradient(left,#209d74 0,#015950 45%);
+    background: url(../images/bg_topo.png),-webkit-gradient(linear,left top,right top,color-stop(0,#209d74),color-stop(45%,#015950));
+    background: url(../images/bg_topo.png),-webkit-linear-gradient(left,#209d74 0,#015950 45%);
+    background: url(../images/bg_topo.png),-o-linear-gradient(left,#209d74 0,#015950 45%);
+    background: url(../images/bg_topo.png),-ms-linear-gradient(left,#209d74 0,#015950 45%);
+    background: url(../images/bg_topo.png), linear-gradient(to right ,#209d74 0,#015950 45%);
+}
+
+@media (min-width: 768px){
+    .header {
+        background: url(../images/bg_topo.png) no-repeat right -15px,url(../images/logo-camara-transp.png) 30px 12px no-repeat,-webkit-gradient(linear,left top,right top,color-stop(0,#209d74),color-stop(45%,#015950));
+        background: url(../images/bg_topo.png) no-repeat right -15px,url(../images/logo-camara-transp.png) 30px 12px no-repeat,-webkit-linear-gradient(left,#209d74 0,#015950 45%);
+        background: url(../images/bg_topo.png) no-repeat right -15px,url(../images/logo-camara-transp.png) 30px 12px no-repeat,-o-linear-gradient(left,#209d74 0,#015950 45%);
+        background: url(../images/bg_topo.png) no-repeat right -15px,url(../images/logo-camara-transp.png) 30px 12px no-repeat,-ms-linear-gradient(left,#209d74 0,#015950 45%);
+        background: url(../images/bg_topo.png) no-repeat right -15px,url(../images/logo-camara-transp.png) no-repeat,linear-gradient(to right,#209d74 0,#015950 45%);
+    }
 }
 
     .header__title {
@@ -328,3 +344,12 @@ a.btn-votar:hover, a.btn-votar:active{
 .btn-obs{
     background: #941d94;
 }
+/*
+.mark-infoleg {
+    position: absolute;
+    color: #1d9e74;
+    margin-left: 16px;
+    font-size: 13px;
+    margin-top: 4px;
+    letter-spacing: 1px;
+}*/
