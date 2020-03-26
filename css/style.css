@@ -120,7 +120,8 @@ body {
 .message-alert.erro-ckeck__icon, 
 .message-alert.warning-triangle__icon,
 .message-alert.info-circle__icon,
-.message-alert.ckeck-circle__icon {
+.message-alert.ckeck-circle__icon,
+.message-alert.loading-circle__icon {
     height: 20px;
     float: left;
     margin: 0 1rem 0 1rem;
@@ -363,7 +364,8 @@ a.btn-votar:hover, a.btn-votar:active{
 .alert.alert-danger.no-border-radius,
 .alert.alert-warning.no-border-radius,
 .alert.alert-info.no-border-radius,
-.alert.alert-success.no-border-radius  {
+.alert.alert-success.no-border-radius,
+.alert.alert-light.no-border-radius{
     border-radius: 0px;
 }
 /*
