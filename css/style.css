@@ -87,6 +87,10 @@ body {
     .header__link-sair {
         color: #FFF;
     }
+    .header__link-sair:hover,
+    .header__link-sair:active {
+        color: #FFF;
+    }
 
 .subheader {
     padding: 10px 15px;
