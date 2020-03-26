@@ -344,6 +344,9 @@ a.btn-votar:hover, a.btn-votar:active{
 .btn-obs{
     background: #941d94;
 }
+.alert.alert-danger.no-border-radius {
+    border-radius: 0px;
+}
 /*
 .mark-infoleg {
     position: absolute;
