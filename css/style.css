@@ -130,8 +130,8 @@ body {
     }
 
 a{
-    color:#0088ce;
-    text-decoration:none;
+    color:#333333;
+    text-decoration: none!important;
 }
 
 /* Página de login */
