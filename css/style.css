@@ -65,11 +65,11 @@ body {
 
 @media (min-width: 768px){
     .header {
-        background: url(../images/bg_topo.png) no-repeat right -15px -webkit-gradient(linear,left top,right top,color-stop(0,#209d74),color-stop(45%,#015950));
-        background: url(../images/bg_topo.png) no-repeat right -15px -webkit-linear-gradient(left,#209d74 0,#015950 45%);
-        background: url(../images/bg_topo.png) no-repeat right -15px -o-linear-gradient(left,#209d74 0,#015950 45%);
-        background: url(../images/bg_topo.png) no-repeat right -15px -ms-linear-gradient(left,#209d74 0,#015950 45%);
-        background: url(../images/bg_topo.png) no-repeat right -15px linear-gradient(to right,#209d74 0,#015950 45%);
+        background: url(../images/bg_topo.png) no-repeat right -15px, -webkit-gradient(linear,left top,right top,color-stop(0,#209d74),color-stop(45%,#015950));
+        background: url(../images/bg_topo.png) no-repeat right -15px, -webkit-linear-gradient(left,#209d74 0,#015950 45%);
+        background: url(../images/bg_topo.png) no-repeat right -15px, -o-linear-gradient(left,#209d74 0,#015950 45%);
+        background: url(../images/bg_topo.png) no-repeat right -15px, -ms-linear-gradient(left,#209d74 0,#015950 45%);
+        background: url(../images/bg_topo.png) no-repeat right -15px, linear-gradient(to right,#209d74 0,#015950 45%);
     }
 }
 
