@@ -16,8 +16,8 @@
       <a href="../login.html" class="header__link-sair">Sair</a>
     </div>
     <div class="subheader">
-      <a href="#" class="subheader__link">
-        <img src="../images/sync-solid.svg" alt="" class="subheader__icon animate"> Atualizar 23s
+      <a href="#" class="subheader__link" onclick="changeImage()">
+        <img id="update-data" src="../images/sync-solid.svg" alt="star stop icons" class="subheader__icon animate"> <span id="stop-play">Parar</span> atualização automática
       </a>
     </div>
     <div class="container-sm">
@@ -112,6 +112,28 @@
         <span class="sr-only">Próximo dia</span>
       </a>
     </div>
+
+    <script>
+        let textLink = document.getElementById('stop-play');
+        let imgChange = document.getElementById('update-data');
+        let hasClass = imgChange.classList.contains("animate");
+        
+        let changeImage = function (){    
+          if (hasClass === true){        
+            imgChange.src = '../images/play-circle-solid.svg';
+            imgChange.classList.remove("subheader__icon","animate");
+            imgChange.classList.add("play-sync__icon");
+            textLink.innerHTML = "Iniciar";
+            hasClass = false;
+          }else{
+            imgChange.src = '../images/sync-solid.svg';
+            imgChange.classList.remove("play-sync__icon");
+            imgChange.classList.add("subheader__icon", "animate");
+            textLink.innerHTML = "Parar";
+            hasClass = true;
+          }
+        }
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

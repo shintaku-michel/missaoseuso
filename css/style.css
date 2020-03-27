@@ -44,7 +44,6 @@ body {
 
 /*Header*/
 .header,
-.subheader,
 .footer {
     display: flex;
     flex-flow: row nowrap;
@@ -66,11 +65,11 @@ body {
 
 @media (min-width: 768px){
     .header {
-        background: url(../images/bg_topo.png) no-repeat right -15px,url(../images/logo-camara-transp.png) 30px 12px no-repeat,-webkit-gradient(linear,left top,right top,color-stop(0,#209d74),color-stop(45%,#015950));
-        background: url(../images/bg_topo.png) no-repeat right -15px,url(../images/logo-camara-transp.png) 30px 12px no-repeat,-webkit-linear-gradient(left,#209d74 0,#015950 45%);
-        background: url(../images/bg_topo.png) no-repeat right -15px,url(../images/logo-camara-transp.png) 30px 12px no-repeat,-o-linear-gradient(left,#209d74 0,#015950 45%);
-        background: url(../images/bg_topo.png) no-repeat right -15px,url(../images/logo-camara-transp.png) 30px 12px no-repeat,-ms-linear-gradient(left,#209d74 0,#015950 45%);
-        background: url(../images/bg_topo.png) no-repeat right -15px,url(../images/logo-camara-transp.png) no-repeat,linear-gradient(to right,#209d74 0,#015950 45%);
+        background: url(../images/bg_topo.png) no-repeat right -15px -webkit-gradient(linear,left top,right top,color-stop(0,#209d74),color-stop(45%,#015950));
+        background: url(../images/bg_topo.png) no-repeat right -15px -webkit-linear-gradient(left,#209d74 0,#015950 45%);
+        background: url(../images/bg_topo.png) no-repeat right -15px -o-linear-gradient(left,#209d74 0,#015950 45%);
+        background: url(../images/bg_topo.png) no-repeat right -15px -ms-linear-gradient(left,#209d74 0,#015950 45%);
+        background: url(../images/bg_topo.png) no-repeat right -15px linear-gradient(to right,#209d74 0,#015950 45%);
     }
 }
 
@@ -95,7 +94,7 @@ body {
 .subheader {
     padding: 10px 15px;
     background-color: var(--secondary-color);
-    justify-content: flex-end;
+    text-align: center;
 }
 
     .subheader a {
@@ -104,6 +103,14 @@ body {
 
     .subheader__icon {
         height: 15px;
+        margin-top: -3px;
+    }
+    .play-sync__icon {
+        height: 15px;
+        margin-top: -3px;
+    }
+    #stop-play{
+        color: white;
     }
 
 .success-ckeck__icon {
@@ -120,11 +127,14 @@ body {
 .message-alert.erro-ckeck__icon, 
 .message-alert.warning-triangle__icon,
 .message-alert.info-circle__icon,
-.message-alert.ckeck-circle__icon,
-.message-alert.loading-circle__icon {
+.message-alert.ckeck-circle__icon {
     height: 20px;
     float: left;
     margin: 0 1rem 0 1rem;
+}
+.message-alert.loading-circle__icon {
+    height: 40px;
+    margin: 0 1rem .2rem 1rem;
 }
 
 /*Footer*/
