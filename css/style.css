@@ -51,7 +51,7 @@ body {
 }
 
 .header {
-    padding: 20px 15px;
+    padding: 15px;
     background-color: var(--primary-color);
     justify-content: space-between;
     border-bottom: 1px solid #209d74;
@@ -76,6 +76,7 @@ body {
     .header__title {
         font-size: 1.5rem;
         color: #FFF;
+        margin: 0;
     }
 
         .header__title--center {
@@ -111,6 +112,12 @@ body {
     }
     #stop-play{
         color: white;
+    }
+    .menu__icon {
+        height: 36px;
+        border: solid 1px #117d63;
+        padding: .3rem .8rem;
+        border-radius: 4px;
     }
 
 .success-ckeck__icon {
@@ -378,12 +385,20 @@ a.btn-votar:hover, a.btn-votar:active{
 .alert.alert-light.no-border-radius{
     border-radius: 0px;
 }
-/*
-.mark-infoleg {
-    position: absolute;
-    color: #1d9e74;
-    margin-left: 16px;
-    font-size: 13px;
-    margin-top: 4px;
-    letter-spacing: 1px;
-}*/
+/*Navbar*/
+.navbar{
+    padding: .5rem .5rem;
+}
+.navbar-infoleg {
+    background: #015950;
+    padding: 0;
+    margin: 0;
+}
+ul.nav-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5rem 1rem;
+}
+li.nav-item {
+    margin: 1rem 0;
+}
