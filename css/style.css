@@ -158,7 +158,7 @@ body {
         justify-content: flex-start;
     }
 
-    .footer a {
+    .footer a,  .footer a:hover, .footer a:active{
         color: #FFF;
     }
 
@@ -179,6 +179,9 @@ body {
 a{
     color:#333333;
     text-decoration: none!important;
+}
+a.footer__button, a.footer__button:hover, a.footer__button:active{
+    color:#ffffff;
 }
 
 /* Página de login */
@@ -401,4 +404,38 @@ ul.nav-list{
 }
 li.nav-item {
     margin: 1rem 0;
+}
+.cards-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;;
+}
+
+.status-aplicacao__prototipacao {
+    background: #305EA0;
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: .8rem;`
+}
+.status-aplicacao__desenvolvimento {
+    background: #b83636;
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: .8rem;
+}
+.status-aplicacao__teste {
+    background: #D7B13B;
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: .8rem;
+}
+.status-aplicacao__homologacao {
+    background: #E49553;
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: .8rem;
 }
