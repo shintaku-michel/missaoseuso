@@ -542,11 +542,8 @@ a.voting-result__link a:active{
 .text-vote__obstrucao{
     color: #941d94;
 }
-.text-vote__presidente{
+.text-vote__presidente, .text-vote__liberado{
     color: #333333;
-}
-.text-vote__liberado{
-    color: #0056b3;
 }
 .custom-control__vote {
     padding: .3rem 2.5rem;
