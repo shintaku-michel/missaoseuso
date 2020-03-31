@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="pt-br">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Resultado da votação</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="header__title">Resultado de Votação Nominal</h1>
+      <a href="../login.html" class="header__link-sair">Sair</a>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 page__margin-top">
+                <div class="card-session">
+                    <div class="card-session-body">
+                        <h2 class="card-sessoes__title">PLEN - Plenário Virtual</h2>
+                        <h3 class="card-sessoes__text text-muted">Teste do Painel Eletrônico (VIRTUAL)</h3>
+                        <p class="card-sessoes__text"><strong>Iniciada:</strong> 30/03/2020 11:17:00</p>
+                        <p class="card-sessoes__text"><strong>Encerrada:</strong> 30/03/2020 11:59:49</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="vote-title-coluns">Resumo da votação</h3>
+        <ul class="row row-cols-2">
+            <li class="col-12 col-md-2 container-votes">
+                <div class="panel-votes">
+                    <p class="panel-votes-num">229</p>
+                    <p class="panel-votes-text">Quórum votação</p>
+                </div>
+            </li>
+            <li class="col-6 col-md-1 container-votes">
+                <div class="panel-votes">
+                    <p class="panel-votes-num">91</p>
+                    <p class="panel-votes-text">Sim</p>
+                </div>
+            </li>
+            <li class="col-6 col-md-1 container-votes">
+                <div class="panel-votes">
+                    <p class="panel-votes-num">76</p>
+                    <p class="panel-votes-text">Não</p>
+                </div>
+            </li>
+            <li class="col-6 col-md-2 container-votes">
+                <div class="panel-votes">
+                    <p class="panel-votes-num">61</p>
+                    <p class="panel-votes-text">Abstenção</p>
+                </div>
+            </li>
+            <li class="col-6 col-md-2 container-votes">
+                <div class="panel-votes">
+                    <p class="panel-votes-num">0</p>
+                    <p class="panel-votes-text">Obstrução</p>
+                </div>
+            </li>
+            <li class="col-6 col-md-2 container-votes">
+                <div class="panel-votes">
+                    <p class="panel-votes-num">1</p>
+                    <p class="panel-votes-text">Voto Presidente</p>
+                </div>
+            </li>
+            <li class="col-6 col-md-2 container-votes">
+                <div class="panel-votes">
+                    <p class="panel-votes-num">229</p>
+                    <p class="panel-votes-text">Total de votantes</p>
+                </div>
+            </li>
+        </ul>
+
+        <div class="row voting-result-container">
+            <div class="col-12">
+                <ul class="nav nav-pills" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link__vote nav-link active" id="votos-tab" data-toggle="tab" href="#votos" role="tab" aria-controls="votos" aria-selected="false">Votos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link__vote nav-link" id="orientacaolideranca-tab" data-toggle="tab" href="#orientacaolideranca" role="tab" aria-controls="orientacaolideranca" aria-selected="true">Orientação da liderança</a>
+                    </li>
+                </ul>
+                
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="votos" role="tabpanel" aria-labelledby="votos-tab">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="voting-result__title">Votação Plenário <span class="badge badge-secondary">513 vagas</span></h4>
+                            </div>
+                            <ul class="col-12 voting-result__list">
+                                <li class="voting-result__item">
+                                    <p class="voting-result__item-name"><strong>Abílio Santana</strong> <span class="text-muted">(PL-BA)</span></p>
+                                    <p class="voting-result__item-vote">Não votou</p>
+                                </li>
+                                <li class="voting-result__item">
+                                    <p class="voting-result__item-name"><strong>Abou Anni</strong> <span class="text-muted">(PSL-SP)</span></p>
+                                    <p class="voting-result__item-vote">Votou <span class="text-vote__nao">NÃO</span></p>
+                                </li>
+                                <li class="voting-result__item">
+                                    <p class="voting-result__item-name"><strong>Acácio Favacho</strong> <span class="text-muted">(PROS-AP)</span></p>
+                                    <p class="voting-result__item-vote">Votou <span class="text-vote__sim">SIM</span></p>
+                                </li>
+                                <li class="voting-result__item">
+                                    <p class="voting-result__item-name"><strong>Adolfo Viana</strong> <span class="text-muted">(PL-BA)</span></p>
+                                    <p class="voting-result__item-vote">Votou <span class="text-vote__abstencao">ABSTENÇÃO</span></p>
+                                </li>
+                                <li class="voting-result__item">
+                                    <p class="voting-result__item-name"><strong>Adriana Ventura</strong> <span class="text-muted">(NOVO-SP)</span></p>
+                                    <p class="voting-result__item-vote">Votou<span class="text-vote__obstrucao">OBSTRUÇÃO</span></p>
+                                </li>
+                                <li class="voting-result__item">
+                                    <p class="voting-result__item-name"><strong>Rodrigo Maia</strong> <span class="text-muted">(DEM-RJ)</span></p>
+                                    <p class="voting-result__item-vote">Votou<span class="text-vote__presidente">SECRETO</span></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="orientacaolideranca" role="tabpanel" aria-labelledby="orientacaolideranca-tab">
+                        <ul class="col-12 voting-result__list">
+                            <li class="voting-result__item">
+                                <p class="voting-result__item-vote">PT <span class="text-vote__sim">SIM</span></p>
+                            </li>
+                            <li class="voting-result__item">
+                                <p class="voting-result__item-vote">PSL <span class="text-vote__nao">NÃO</span></p>
+                            </li>
+                            <li class="voting-result__item">
+                                <p class="voting-result__item-vote">PL <span class="text-vote__abstencao">ABSTENÇÃO</span></p>
+                            </li>
+                            <li class="voting-result__item">
+                                <p class="voting-result__item-vote">PP <span class="text-vote__obstrucao">OBSTRUÇÃO</span></p>
+                            </li>
+                            <li class="voting-result__item">
+                                <p class="voting-result__item-vote">PSD <span class="text-vote__liberado">LIBERADO</span></p>
+                            </li>
+                            <li class="voting-result__item">
+                                <p class="voting-result__item-vote">REPUBLICANOS <span class="text-vote__liberado">LIBERADO</span></p>
+                            </li>
+                            <li class="voting-result__item">
+                                <p class="voting-result__item-vote">PSB <span class="text-vote__nao">NÃO</span></p>
+                            </li>
+                            <li class="voting-result__item">
+                                <p class="voting-result__item-vote">PDT <span class="text-vote__obstrucao">OBSTRUÇÃO</span></p>
+                            </li>
+                            <li class="voting-result__item">
+                                <p class="voting-result__item-vote">DEM </p>
+                            </li>
+                            <li class="voting-result__item">
+                                <p class="voting-result__item-vote">GOVERNO</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer footer--back">
+      <a href="lista-reuniao.html" class="footer__button footer__button--anterior">
+        <img src="../images/chevron-left-solid.svg" alt="Ícone voltar" class="footer__icon" aria-hidden="true"> Voltar
+      </a>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </body>

@@ -127,7 +127,6 @@ body {
 }
 .erro-ckeck__icon {
     height: 45px;
-    float: left;
     margin: 0 1rem 0 1rem;
 }
 
@@ -245,7 +244,12 @@ a.footer__button, a.footer__button:hover, a.footer__button:active{
     text-align: center;
     margin: 0 1rem 1rem 0;
 }
-
+.card-session-body{
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    background: white;
+}
 
 .card-sessoes {
     background-color: #FFF;
@@ -283,12 +287,14 @@ a.footer__button, a.footer__button:hover, a.footer__button:active{
     }
 
     .card-sessoes__title {
-        font-size: 1.15rem;
+        font-size: 1.4rem;
+        margin: 0;
     }
 
     .card-sessoes__text {
+        font-size: 1rem;
         margin: 0;
-        line-height: 1.2rem;
+        line-height: 1.4rem;
     }
 
     .badge--ongoing {
@@ -387,6 +393,8 @@ a.btn-votar:hover, a.btn-votar:active{
 .alert.alert-success.no-border-radius,
 .alert.alert-light.no-border-radius{
     border-radius: 0px;
+    display: flex;
+    align-items: center;
 }
 /*Navbar*/
 .navbar{
@@ -411,31 +419,153 @@ li.nav-item {
     padding: 0;;
 }
 
-.status-aplicacao__prototipacao {
-    background: #305EA0;
+.status-aplicacao__prototipacao,
+.status-aplicacao__desenvolvimento,
+.status-aplicacao__teste,
+.status-aplicacao__homologacao {
     display: block;
     color: white;
     text-align: center;
-    font-size: .8rem;`
+    font-size: .8rem;
+}
+
+.status-aplicacao__prototipacao {
+    background: #305EA0;
 }
 .status-aplicacao__desenvolvimento {
     background: #b83636;
-    display: block;
-    color: white;
-    text-align: center;
-    font-size: .8rem;
 }
 .status-aplicacao__teste {
     background: #D7B13B;
-    display: block;
-    color: white;
-    text-align: center;
-    font-size: .8rem;
 }
 .status-aplicacao__homologacao {
     background: #E49553;
-    display: block;
-    color: white;
-    text-align: center;
+}
+.cod-id{
     font-size: .8rem;
+}
+
+/*resultado votação*/
+.container-votes {
+    margin-top: 1rem;
+}
+.panel-votes {
+    text-align: center;
+    padding: 0;
+}
+.panel-votes-num{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: -5px;
+}
+.panel-votes-text {
+    margin: 0;
+}
+ul.row.row-cols-2 {
+    margin: 15px 0 0 0;
+    padding: 0;
+    list-style-type: none;
+    border: solid 1px #cccccc;
+}
+li.col-12.col-md-2.container-votes {
+    background: #cccccc;
+    margin: 0;
+    padding: 0 0 5px 0;
+}
+li.col-6.col-md-1.container-votes  {
+    padding: 0;
+    margin: 0;
+    border-left: 1px solid #ccc;
+}
+li.col-6.col-md-2.container-votes{
+    padding: 0;
+    margin: 0;
+    border-left: 1px solid #ccc;
+}
+@media (max-width: 768px){
+    li.col-6.col-md-1.container-votes  {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+    }
+    li.col-6.col-md-2.container-votes{
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+    }
+}
+a.voting-result__link,
+a.voting-result__link a:hover,
+a.voting-result__link a:active{
+    color: #0056b3;
+}
+.voting-result-container{
+    margin-top: 1rem;
+}
+.vote-title-coluns {
+    margin-top: 1.2rem;
+}
+.voting-result__title {
+    font-size: 1.2rem;
+    border-bottom: solid 1px #cccccc;
+    padding-bottom: .5rem;
+}
+.voting-result__list {
+    list-style-type: none;
+    margin: 0;
+}
+.voting-result__item{
+    border-bottom: dashed;
+    border-bottom: dashed 3px #cccccc;
+    padding-bottom: .2rem;
+}
+.voting-result__item:last-of-type{
+    border-bottom: none;
+}
+.voting-result__item-vote span, 
+.voting-result__title span, 
+.voting-result__item-partido span{
+    float: right;
+}
+.voting-result__item-name, 
+.voting-result__item-vote, 
+.voting-result__item-partido{
+    margin: 0;
+}
+.text-vote__nao{
+    color: #a92f3a;
+}
+.text-vote__sim{
+    color: #4c8a40;
+}
+.text-vote__abstencao{
+    color: #545b62;
+}
+.text-vote__obstrucao{
+    color: #941d94;
+}
+.text-vote__presidente{
+    color: #333333;
+}
+.text-vote__liberado{
+    color: #0056b3;
+}
+.custom-control__vote {
+    padding: .3rem 2.5rem;
+    min-height: 2.5rem;
+}
+.custom-control-label::before {
+    top: 0rem;
+    left: -2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.custom-control-label::after {
+    top: -.3rem;
+    left: -2.25rem;
+    width: 2rem;
+    height: 2rem;
+}
+.nav-link__vote.nav-link {
+    border-radius: .25rem;
+    color: #0056b3;
+    font-size: 1.2rem;
 }
