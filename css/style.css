@@ -501,7 +501,7 @@ a.voting-result__link a:active{
     margin-top: 1rem;
 }
 .vote-title-coluns {
-    margin-top: 1.2rem;
+    margin-top: 1rem;
 }
 .voting-result__title {
     font-size: 1.2rem;
@@ -514,7 +514,7 @@ a.voting-result__link a:active{
 }
 .voting-result__item{
     border-bottom: dashed;
-    border-bottom: dashed 3px #cccccc;
+    border-bottom: dashed 2px #cccccc;
     padding-bottom: .2rem;
 }
 .voting-result__item:last-of-type{
