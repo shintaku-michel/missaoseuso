@@ -502,6 +502,7 @@ a.voting-result__link a:active{
 }
 .vote-title-coluns {
     margin-top: 1rem;
+    font-size: 1.5rem;
 }
 .voting-result__title {
     font-size: 1.2rem;
@@ -564,5 +565,4 @@ a.voting-result__link a:active{
 .nav-link__vote.nav-link {
     border-radius: .25rem;
     color: #0056b3;
-    font-size: 1.2rem;
 }
