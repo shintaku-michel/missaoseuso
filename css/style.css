@@ -504,31 +504,64 @@ a.voting-result__link a:active{
     margin-top: 1rem;
     font-size: 1.5rem;
 }
-.voting-result__title {
-    font-size: 1.2rem;
-    border-bottom: solid 1px #cccccc;
-    padding-bottom: .5rem;
+ul.row.row-cols-2.voting-result__list {
+    margin: 0;
+    padding: 0;
 }
 .voting-result__list {
     list-style-type: none;
     margin: 0;
 }
+.voting-result__item-vote{
+    margin: 0;
+}
 .voting-result__item{
-    border-bottom: dashed;
-    border-bottom: dashed 2px #cccccc;
+    border-bottom: solid 1px #cccccc;
     padding-bottom: .2rem;
 }
 .voting-result__item:last-of-type{
     border-bottom: none;
 }
-.voting-result__item-vote span, 
-.voting-result__title span, 
-.voting-result__item-partido span{
-    float: right;
+.voting-result__item p{
+    font-weight: bold;
 }
-.voting-result__item-name, 
-.voting-result__item-vote, 
-.voting-result__item-partido{
+@media (max-width: 768px){
+    .voting-result__item:nth-child(odd){
+        border-right: solid 1px #cccccc;
+    }
+}
+@media (min-width: 768px){
+    .voting-result__item:nth-child(n+1):nth-child(-n+5),
+    .voting-result__item:nth-child(n+7):nth-child(-n+11),
+    .voting-result__item:nth-child(n+13):nth-child(-n+17),
+    .voting-result__item:nth-child(n+19):nth-child(-n+23),
+    .voting-result__item:nth-child(n+25):nth-child(-n+27){
+        border-right: solid 1px #cccccc;
+    }
+    .voting-result__item:nth-child(n+25):nth-child(-n+27){
+        border-bottom: none;
+    }
+}
+.tab__item-vote p{
+    justify-content: space-between;
+    display: flex;
+    flex-flow: wrap;
+    margin: 0;
+}
+.tab__item-partido{
+    color: #777777;
+    font-weight: normal!important;
+}
+.tab__item-vote{
+    border-bottom: dashed 2px #cccccc;
+    padding-bottom: .2rem;
+    margin: 0;
+}
+.tab__item-vote:last-of-type{
+    border-bottom: none;
+}
+.tab__item-name{
+    font-weight: bold;
     margin: 0;
 }
 .text-vote__nao{
@@ -543,7 +576,8 @@ a.voting-result__link a:active{
 .text-vote__obstrucao{
     color: #941d94;
 }
-.text-vote__presidente, .text-vote__liberado{
+.text-vote__presidente,
+.text-vote__liberado{
     color: #333333;
 }
 .custom-control__vote {
@@ -566,3 +600,122 @@ a.voting-result__link a:active{
     border-radius: .25rem;
     color: #0056b3;
 }
+.orientacao-lideranca {
+    margin: 1rem;
+    text-align: center;
+}
+.orientacao-lideranca__link{
+    color: #0056b3;
+}
+
+/*Abas votação e presença*/
+.tab__title{
+    font-size: 1.2rem;
+}
+@media (max-width: 768px){
+    .tab__subtitle-legend{
+        font-size: 1rem;
+        justify-content: space-between;
+        display: flex;
+    }
+}
+.tab__legend{
+    font-weight: bold;
+    margin: 0;
+}
+.tab__parlamentares{
+    border-bottom: dashed 2px #cccccc;
+    padding: .5rem 0;
+}
+.partido-titular{
+    display: block;
+    color: #777777;
+}
+.tab__legend-status--title{
+    font-weight: bold;
+    display: block;
+}
+.tab__legend-status--desc{
+    display: block;
+}
+.badge-titular {
+    width: 10px;
+    height: 10px;
+    background: green;
+    display: inline-block;
+}
+.badge-suplente {
+    width: 10px;
+    height: 10px;
+    background: orange;
+    display: inline-block;
+}
+.tab__list{
+    list-style-type: none;
+    margin: 0;
+}
+.tab__item{
+    margin-bottom: .5rem;
+}
+.tab__bloco {
+    margin: 0;
+}
+.data-voto__contabilizado,
+.data-voto__nao-contabilizado{
+    color: #777777;
+}
+.tab__bloco--partido{
+    font-weight: bold;
+}
+.parlamentar-titular__container,
+.parlamentar-suplente__container{
+    display: flex;
+    justify-content: space-between;
+}
+.parlamentar-suplente__container{
+    margin-bottom: .5rem;
+}
+.parlamentar-titular,
+.parlamentar-suplente {
+    width: 50%;
+}
+.parlamentar-titular__container.nao-membro {
+    margin-bottom: .5rem;
+    border-bottom: solid 1px #cccccc;
+}
+.parlamentar-titular__container.nao-membro:last-of-type {
+    border-bottom: none;
+}
+@media (min-width: 768px){
+    .parlamentar-suplente__container {
+        margin-bottom: 0;
+        background: #cccccc;
+        padding: .5rem;
+    }
+    .parlamentar-titular__container {
+        margin-bottom: 0;
+        padding: .5rem;
+    }
+    .tab__parlamentares {
+        border-bottom: none;
+        padding: 0;
+    }
+    .parlamentar-titular__container.nao-membro:nth-child(odd){
+        background: #cccccc;
+        padding: .5rem!important;
+        margin-bottom: 0!important;
+    }
+    .parlamentar-titular__container.nao-membro {
+        margin-bottom: 0!important;
+        border-bottom: none!important;
+    }
+    .tab__legend {
+        font-weight: bold;
+        margin: 1rem 0 .5rem 0;
+    }
+    .tab__subtitle-legend span.badge-titular,
+    .tab__subtitle-legend span.badge-suplente{
+        margin-left: 1rem;
+    }
+}
+
